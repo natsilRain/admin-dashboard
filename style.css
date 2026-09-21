@@ -68,17 +68,27 @@ ol, ul {
 
 .sidebar {
     display: grid;
-    grid-template-rows: 120px 0.6fr 2fr;
+    grid-template-rows: 60px 2fr 3fr;
+    gap: 50px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
 }
 
 .logo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .main-nav ul li {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 65px 1fr;
+}
+
+.other-nav ul li {
+    display: grid;
+    grid-template-columns: 65px 1fr;
 }
 
 /* Header Sub Structure */
@@ -142,4 +152,66 @@ ol, ul {
 
 .trending-user .user-pfp {
     grid-row: 1 / 3;
+}
+
+/* Sidebar Styling */
+
+.sidebar {
+    background-color: #0095ff;
+    color: white;
+
+    padding: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar ul li {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    font-size: 2rem;
+}
+
+.logo-icon {
+    margin-top: 2px;
+}
+
+.nav-icon {
+    max-width: 30px;
+    justify-self: center;
+}
+
+.main-nav a, .other-nav a {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Header Styling */
+
+.header {
+    background-color: white;
+}
+
+/* Main Content Styling */
+
+.main-content {
+    background-color: rgb(221, 221, 221);
+    color: #16161a;
+}
+
+.card {
+    background-color: white;
+}
+
+.announcements-box {
+    background-color: white;
+}
+
+.trending-box {
+    background-color: white;
 }
